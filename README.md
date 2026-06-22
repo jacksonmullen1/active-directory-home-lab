@@ -17,6 +17,12 @@ This project documents the setup of a Windows Server 2022 Active Directory home 
 * Group Policy Management
 * File Sharing and NTFS Permissions
 
+## Organizational Unit Structure
+
+The following image shows the business OU hierarchy used in the lab.
+
+![OU Structure](screenshots/02-aduc-structure1.png)
+
 ## Domain
 
 Domain Name: `mullentech.local`
@@ -109,6 +115,21 @@ Performed common IT support tasks:
 ## Screenshots
 
 Screenshots are included in the `/screenshots` folder to document the lab setup and completed tasks.
+
+## Lessons Learned
+
+Building this Active Directory home lab provided valuable hands-on experience with Windows Server administration and troubleshooting. Several issues encountered during the project helped reinforce important concepts and best practices:
+
+* Learned the importance of renaming a server before promoting it to a Domain Controller after experiencing trust relationship and Netlogon issues caused by renaming the server post-promotion.
+* Developed a better understanding of DNS and its critical role in domain communication and workstation authentication.
+* Gained experience troubleshooting Group Policy Objects (GPOs), including policy scope, security filtering, and policy application verification using `gpresult`.
+* Learned how share permissions and NTFS permissions work together to control access to network resources.
+* Configured and validated DHCP scopes and automatic IP address assignment for domain clients.
+* Troubleshot mapped drive deployment and verified network share accessibility.
+* Built and tested common Help Desk scenarios including password resets, account unlocks, user onboarding, group membership changes, and workstation deployment.
+* Strengthened problem-solving skills by diagnosing and resolving issues through research, testing, and iterative troubleshooting.
+
+This project reinforced the importance of planning, documentation, and systematic troubleshooting while providing practical experience with technologies commonly used in enterprise IT environments.
 
 ## Conclusion
 
